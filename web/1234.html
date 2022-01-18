@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!-- fontAwesome -->
+     
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        :root{
+            font-family:'Roboto','Noto Sans KR',sans-serif;
+            font-weight:300;
+            font-size:14px;
+            line-height:24px;
+            color:#444;
+}
+          *{box-sizing:border-box;margin:0;padding:0;}
+        .clearfix::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        .wrap{
+            width: 360px;
+            margin: 0 auto;
+        }
+        i{
+            color: gray;
+        }
+        /* 헤더 */
+        header{
+            display: flex;
+            justify-content: space-between;
+            height: 49px;    
+            text-align: center;
+            line-height: 48px;
+            border-bottom: 1px solid gray;
+        }
+       
+        .icon{
+            align-items: flex-end;
+            padding: 0 16px;
+        }
+        .icon a:first-child{
+            margin-right:18px ;
+        }
+        /* 메인 */
+        .main-container{
+            padding-top: 40px;
+        }
+        .sec{
+            height: 562px;
+            padding-top: 40px;
+        }
+        .box{          
+            display: flex;
+            justify-content: center;
+            padding: 14px 0;
+            position: relative;
+            
+        }
+        .b-circle{
+            height: 140px;
+            width: 140px;
+            border: 4px solid #8df7c1;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .b-circle img{
+            width: 100%;
+            height: 100%;            
+        }
+        .s-circle{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute; 
+            font-size: 7px;
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            right: 120px;
+            bottom: 16px;
+        }
+        /* 텍스트 */
+        .text{
+            text-align: center;
+            font-size: 18px;
+        }
+        .text p:nth-child(2){
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .text p:last-child{
+            margin-bottom: 30px;
+        }
+        .text2{
+            display: flex;
+            justify-content: center;
+            margin:30px 0;
+        }
+        .text2 p{
+            padding: 0 19px;
+            text-align: center;
+            line-height: 19px;
+        }
+        .text2 p:nth-child(2){
+            position: relative
+        }
+        .text2 p:nth-child(2)::before,.text2 p:nth-child(2)::after{
+            content: '';
+            display: block;
+            clear: both;
+            position:absolute;
+            background-color:gray;
+            top:50%;
+            transform: translateY(-50% );
+        }
+        .text2 p:nth-child(2)::before{
+            width: 2px;
+            height: 14px;
+            left: 0;
+        }
+        .text2 p:nth-child(2)::after{
+            width: 2px;
+            height: 14px;
+            right: 0;
+        }
+        /* 포토 */
+        .photos{
+            height: 179px;
+        }
+        .photos img{
+            width:87px;
+            height:87px;
+            float:left;
+            overflow:hidden;
+        }
+        .photo{
+            margin-right:4px;
+            margin-bottom:4px;
+        }
+        .photo4,.photo8{
+            margin-right:0;
+        }
+
+        /* 푸터 */
+        .footer{
+            height: 44px;
+            border:1px solid black;
+            background-color: yellow;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            display: inline;
+            padding: 0 32px;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="wrap">
+        <header class="header">
+            <div class="icon icon1">
+                <a href="#"><i class="fas fa-search"></i></a>            
+                <a href="#"><i class="fas fa-search"></i></a>            
+            </div>
+            <h1>Profile</h1>
+            <div class="icon icon2">
+                <a href="#"><i class="fas fa-search"></i></a>            
+                <a href="#"><i class="fas fa-search"></i></a>            
+            </div>
+        </header>
+
+        <section class="main">  
+            <div class="main-container">
+                <div class="box">
+                    <div class="b-circle">    
+                        <img src="./images/twins-gebb2f8e18_640.png" alt="이미지">
+                    </div>
+                    <div class="s-circle">50%</div>
+                </div>
+            </div>
+            <div class="text">
+                <p>Complate</p>
+                <p>Hong Gil-dong</p>
+                <p>아이콘/ Seoul,jonngu</p>
+            </div>
+            <div class="text2">
+                
+                <p>1,120<br>팔로워</p>
+                <p>1,120<br>팔로워</p> 
+                <p>1,120<br>팔로워</p>
+            </div>
+            <div class="photos">
+                <img class="photo photo1" src="./images/plants-g822e405cc_1280.jpg" alt="이미지">
+                <img class="photo photo2" src="./images/plants-g822e405cc_1280.jpg" alt="이미지">
+                <img class="photo photo3" src="./images/plants-g822e405cc_1280.jpg" alt="이미지">
+                <img class="photo photo4" src="./images/plants-g822e405cc_1280.jpg" alt="이미지">
+                <img class="photo photo5" src="./images/plants-g822e405cc_1280.jpg" alt="이미지">
+                <img class="photo photo6" src="./images/plants-g822e405cc_1280.jpg" alt="이미지">
+                <img class="photo photo7" src="./images/plants-g822e405cc_1280.jpg" alt="이미지">
+                <img class="photo photo8" src="./images/plants-g822e405cc_1280.jpg" alt="이미지">
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+                <div class="logo logo1"><i class="fas fa-search"></i></div>
+                <div class="logo logo2"><i class="fas fa-search"></i></div>
+                <div class="logo logo3"><i class="fas fa-search"></i></div>
+                <div class="logo logo4"><i class="fas fa-search"></i></div>
+            </div>
+        </footer>
+
+    </section>
+
+   
+</body>
+</html>
