@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing:content-box;}
+        .square{
+            width:0;
+            height:0;
+
+            border:50px solid red;
+            border-top-color:green;
+            border-right-color:blue;
+            border-bottom-color:cyan;
+        }
+
+        .tri-top{
+            width:0;
+            height:0;
+
+            border-bottom:100px solid red;
+            border-top:0;
+            border-right:50px solid transparent;
+            border-left:50px solid transparent;
+        }
+        .tri-left{
+            width:0;
+            height:0;
+
+            border-right:100px solid blue;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+        }
+        .tri-left-top{
+            width:0px;
+            height:0px;
+
+            border:50px solid red;
+            border-right-color:transparent;
+            border-bottom-color:transparent;
+        }
+        .point6-star{
+            box-sizing: border-box;
+            width:100px;
+            height:100px;
+            border:100px solid green;
+            border-bottom:100px solid green;  
+            border-right:50px solid transparent;
+            border-left:50px solid transparent;
+            border-top:0;    
+            position:relative
+        }
+        .point6-star::before{
+            position: absolute;
+            left: 0;
+            top:0 ;
+            transform: translate(-50%,30%) rotate(180deg);
+
+            box-sizing: border-box;
+            content: '';
+            display: block;
+            width:100px;
+            height:100px;
+            border:100px solid green;
+            border-bottom:100px solid green;    
+            border-right:50px solid transparent;
+            border-left:50px solid transparent;
+            border-top:0;
+        }
+        .dot-image{
+            width: 10px;
+            height: 10px;
+            margin: 100px 0 0 200px;
+            background-color: red;
+            background-color:#Fff;
+
+            box-shadow:
+            10px 0 0 0 red,
+            20px 0 0 0 red,
+            30px 0 0 0 red,
+            50px 0 0 0 red,
+            60px 0 0 0 red,
+
+            -10px 0 0 0 red,
+            -20px 0 0 0 red,;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <div class="square"></div>
+    <div class="tri-top"></div>
+    <div class="tri-left"></div>
+    <div class="tri-left-top"></div> -->
+
+    <!-- <div class="point6-star"></div> -->
+    
+    <div class="dot-image">
+
+    </div>
+</body>
+</html>
